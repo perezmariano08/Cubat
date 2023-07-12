@@ -1,10 +1,9 @@
 :root {
     --red: #bc0000;
-    --black: #121212;
-    --white: #fafafa;
     --blue: #1A254D;
 
     /* Gray Scale */
+    --white: #fafafa;
     --gray-100: #e9ebed;
     --gray-200: #CACDD2;
     --gray-300: #9FA4A9;
@@ -12,6 +11,7 @@
     --gray-500: #464C52;
     --gray-600: #26282B;
     --gray-700: #1B1D1F;
+    --black: #121212;
 }
 
 * {
@@ -59,6 +59,7 @@ header {
     font-size: 24px;
 }
 
+/*? Hero */
 .hero {
     padding: 0 100px;
     display: flex;
@@ -92,11 +93,14 @@ header {
     align-items: start;
     color: var(--white);
     z-index: 2;
-    gap: 10px;
+    gap: 20px;
 }
 
-/* Bateries */
+.hero-text span {
+    color: var(--gray-200);
+}
 
+/*? Bateries */
 #bateries {
     width: 100%;
     display: flex;
@@ -118,20 +122,75 @@ header {
 .bateries-brand {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .bateries-brand img {
     height: 100px;
     filter: saturate(0);
+    opacity: .5;
 }
 
 .bateries-brand img:hover {
     filter: saturate(1);
     transition: all .5s ease;
+    opacity: 1;
 }
 
-/* Ubication */
+/* Service Bateries */
 
+#services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: var(--gray-100);
+}
+
+.services {   
+    padding: 50px 100px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.services img,
+.services-info {
+    width: 50%;
+}
+
+.services img {
+    border-radius: 20px;
+}
+
+.services-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services-info span {
+    color: var(--gray-500);
+}
+
+.services-info h3 {
+    color: var(--blue);
+}
+
+.services-info p {
+    font-size: 18px;
+}
+
+.filled.btn-services-wsp {
+    background-color: #25d366;
+}
+
+.btn-services-wsp i {
+    font-size: 24px;
+}
+
+/*? Ubication */
 #ubication {
     padding: 50px 0;
     width: 100%;
@@ -189,13 +248,10 @@ header {
     color: var(--gray-400);
 }
 
-/* NEUMATICOS */
+/*? Neumaticos */
 
-.wheel-brand img {
-    height: 35px;
-}
 
-/* BENEFICIOS */
+/*? Beneficios */
 #benefits {
     background-color: var(--gray-100);
     display: flex;
@@ -204,12 +260,12 @@ header {
 
 .benefits {
     max-width: 1200px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    padding: 40px 25px;
+    justify-content: space-between;
+    padding: 50px 100px;
     align-items: center;
     color: var(--gray-600);
-    gap: 150px;
 }
 
 .benefit {
@@ -244,7 +300,6 @@ header {
 }
 
 
-
 /*? CSS Whatsapp Chat */
 #whatsapp-chat {
     position: fixed;
@@ -276,6 +331,7 @@ a.blantershow-chat {
     padding: 10px 20px;
     border-radius: 30px;
     box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+    cursor: pointer;
 }
 
 a.blantershow-chat svg {
@@ -288,23 +344,28 @@ a.blantershow-chat svg {
     color: #fff;
     padding: 20px;
 }
+
 .header-chat h3 {
     margin: 0 0 10px;
 }
+
 .header-chat p {
     font-size: 14px;
     line-height: 1.7;
     margin: 0;
 }
+
 .info-avatar {
     position: relative;
 }
+
 .info-avatar img {
     border-radius: 100%;
     width: 50px;
     float: left;
     margin: 0 10px 0 0;
 }
+
 .info-avatar:before {
     content: "\f232";
     z-index: 1;
@@ -321,11 +382,13 @@ a.blantershow-chat svg {
 .info-chat span {
     display: block;
 }
+
 #get-label,
 span.chat-label {
     font-size: 12px;
     color: #888;
 }
+
 #get-nama,
 span.chat-nama {
     margin: 5px 0 0;
@@ -333,13 +396,16 @@ span.chat-nama {
     font-weight: 700;
     color: #222;
 }
+
 #get-label,
 #get-nama {
     color: #fff;
 }
+
 span.my-number {
     display: none;
 }
+
 .blanter-msg {
     color: #444;
     padding: 20px;
@@ -347,6 +413,7 @@ span.my-number {
     text-align: center;
     border-top: 1px solid #ddd;
 }
+
 textarea#chat-input {
     border: none;
     font-family: "Arial", sans-serif;
@@ -355,6 +422,7 @@ textarea#chat-input {
     outline: none;
     resize: none;
 }
+
 a#send-it {
     color: #555;
     width: 40px;
@@ -364,11 +432,13 @@ a#send-it {
     background: #eee;
     border-radius: 10px;
 }
+
 .first-msg {
     background: #f5f5f5;
     padding: 30px;
     text-align: center;
 }
+
 .first-msg span {
     background: #e2e2e2;
     color: #333;
@@ -378,31 +448,38 @@ a#send-it {
     padding: 15px 20px;
     display: inline-block;
 }
+
 .start-chat .blanter-msg {
     display: flex;
 }
+
 #get-number {
     display: none;
 }
+
 a.close-chat {
     position: absolute;
     top: 5px;
     right: 15px;
     color: #fff;
     font-size: 30px;
+    cursor: pointer;
 }
+
 @keyframes showhide {
     from {
         transform: scale(0.5);
         opacity: 0;
     }
 }
+
 @keyframes showchat {
     from {
         transform: scale(0);
         opacity: 0;
     }
 }
+
 @media screen and (max-width: 480px) {
     #whatsapp-chat {
         width: auto;
@@ -411,6 +488,7 @@ a.close-chat {
         font-size: 80%;
     }
 }
+
 .hide {
     display: none;
     animation-name: showhide;
@@ -418,6 +496,7 @@ a.close-chat {
     transform: scale(1);
     opacity: 1;
 }
+
 .show {
     display: block;
     animation-name: showhide;
@@ -448,19 +527,26 @@ footer {
 .footer-social {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    font-size: 25px;
+    align-items: start;
+    justify-content: start;
+    gap: 30px;
     font-weight: 500;
 }
 
+.footer-logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 .footer-social img {
-    width: 150px;
+    width: 50px;
 }
 
 .social-icons {
     display: flex;
     gap: 20px;
+    font-size: 25px;
 }
 
 .social-icons a {

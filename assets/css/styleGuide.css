@@ -1,17 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/*? Headings */
 h1 {
-    font-size: 50px;
+    font-size: 45px;
+    line-height: 45px;
     font-weight: 700;
 }
 
 h2 {
     font-size: 40px;
+    line-height: 40px;
     font-weight: 700;
 }
 
 h3 {
     font-size: 35px;
+    line-height: 35px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -19,24 +38,55 @@ p {
     font-weight: 300;
 }
 
+/*? Botones */
 .btn {
     display: flex;
+    width: fit-content;
     align-items: center;
     gap: 6px;
-    background-color: var(--red);
-    color: var(--white);
-    padding: 10px 20px;
-    margin: 10px 0;
     border-radius: 20px;
     text-transform: uppercase;
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 
+.small {
+    padding: 10px 20px;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.medium {
+    padding: 14px 32px;
+    margin: 14px 0;
+    font-size: 16px;
+}
+
+.large {
+    padding: 16px 48px;
+    margin: 16px 0;
+    font-size: 18px;
+}
+
+.filled {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.outline {
+    background-color: transparent;
+    color: var(--white);
+    border-color: var(--white);
+}
+
+/*? Title Sections */
 .title {
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .title-h2 {

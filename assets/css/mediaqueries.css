@@ -1,0 +1,92 @@
+
+@media only screen and (max-width: 1200px){
+    
+}
+
+/* Laptop */
+@media only screen and (max-width: 992px){
+    
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .header-top {
+        padding: 0 50px;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    header,
+    .hero {
+        padding: 0 50px;
+    }
+    
+    .services {
+        flex-direction: column;
+        width: 100%;
+        padding: 50px;
+    }
+
+    .services img,
+    .services-info{
+        width: 100%;
+    }
+    
+    .services-wheel {
+        flex-direction: column-reverse;
+    }
+
+    .ubication {
+        padding: 50px;
+    }
+
+    .benefits {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .benefit {
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+
+    .header-top {
+        font-size: 12px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .bateries {
+        padding: 50px 30px;
+    }
+
+    .bateries-brand img,
+    .wheel-brand img {
+        height: 50px;
+        filter: none;
+        opacity: 1;
+    }
+
+    #ubication {
+        padding: 50px 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}   

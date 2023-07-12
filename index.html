@@ -6,6 +6,7 @@
     <!--? CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/styleGuide.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
     <!--? FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cubat</title>
@@ -27,9 +28,9 @@
     <main>
         <section class="hero">
             <div class="hero-text">
-                <h1>El neumático y la batería que necesitas al mejor precio</h1>
+                <h1>El neumático y la batería que necesitas al <span>mejor precio</span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi dolore facere, corporis esse, et id fuga repellat est totam explicabo natus numquam ipsum repudiandae cupiditate sed nisi omnis debitis minus!</p>
-                <a href="#" class="btn">
+                <a href="#" class="btn small filled">
                     <i class="fa-brands fa-whatsapp"></i>
                     Boton
                 </a>
@@ -49,11 +50,65 @@
                     <img src="./assets/img/logo-placord.png" alt="">
                     <img src="./assets/img/logo-clorex.png" alt="">
                     <img src="./assets/img/logo-nacional.jpg" alt="">
-                    <img src="./assets/img/logo-volta.jpg" alt="">
+                    <img src="./assets/img/logo-volta.png" alt="">
                 </div>
             </div>
         </section>
 
+        <!-- Services Batteries-->
+        <section id="services">
+            <div class="services">
+                    <img src="./assets/img/services-battery.webp" alt="" srcset="">
+                    <div class="services-info">
+                        <span>¿Te quedaste sin batería?</span>
+                        <h3>Realizamos cambios de Baterías</h3>
+                        <p>Control de carga del sistema eléctrico de su vehiculo.
+                            Productos Originales y con Garantía.</p>
+                        <a class="btn-services-wsp btn small filled">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Solicitar ahora
+                        </a>
+                    </div>
+            </div>
+        </section>
+        
+        <section id="bateries">
+            <div class="bateries">
+                <div class="title">
+                    <h2 class="title-h2">Neumáticos de calidad Original</h2>
+                    <span class="title-line"></span>
+                    <p class="title-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt quod assumenda autem dolorem corporis nisi molestias veritatis maiores natus quos, repellat laudantium eius earum dolorum? Ad officia commodi adipisci.</p>
+                </div>
+                <div class="bateries-brand wheel-brand">
+                    <img src="./assets/img/logo-bridgestone.png" alt="">
+                    <img src="./assets/img/logo-pirelli.png" alt="">
+                    <img src="./assets/img/logo-michelin.png" alt="">
+                    <img src="./assets/img/logo-fate.png" alt="">
+                    <img src="./assets/img/logo-continental.png" alt="">
+                    <img src="./assets/img/logo-goodyear.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Services Neumaticos -->
+        <section id="services">
+            <div class="services services-wheel">
+                    <div class="services-info">
+                        <span>¿Te quedaste sin batería?</span>
+                        <h3>Realizamos cambios de Baterías</h3>
+                        <p>Control de carga del sistema eléctrico de su vehiculo.
+                            Productos Originales y con Garantía.</p>
+                        <a class="btn-services-wsp btn small filled">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Solicitar ahora
+                        </a>
+                    </div>
+                    <img src="./assets/img/services-battery.webp" alt="" srcset="">
+            </div>
+        </section>
+        
+        
         <section id="ubication">
             <div class="ubication">
                 <div class="title">
@@ -102,38 +157,21 @@
             </div>
         </section>
 
-        <section id="bateries">
-            <div class="bateries">
-                <div class="title">
-                    <h2 class="title-h2">Neumáticos de calidad Original</h2>
-                    <span class="title-line"></span>
-                    <p class="title-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt quod assumenda autem dolorem corporis nisi molestias veritatis maiores natus quos, repellat laudantium eius earum dolorum? Ad officia commodi adipisci.</p>
-                </div>
-                <div class="bateries-brand wheel-brand">
-                    <img src="./assets/img/logo-bridgestone.png" alt="">
-                    <img src="./assets/img/logo-pirelli.png" alt="">
-                    <img src="./assets/img/logo-michelin.png" alt="">
-                    <img src="./assets/img/logo-fate.png" alt="">
-                    <img src="./assets/img/logo-continental.png" alt="">
-                    <img src="./assets/img/logo-goodyear.png" alt="">
-                </div>
-            </div>
-        </section>
+        
     </main>
     <footer>
         <div class="footer">
             <div class="footer-social">
-                <img src="./assets/img/logo-cubat.png" alt="" srcset="">
-                <span>Seguinos!</span>
+                <div class="footer-logo">
+                    <img src="./assets/img/logo-cubat.png" alt="" srcset="">
+                    <h6>Cubat Oficial</h6>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quisquam ut aliquam cum distinctio dolore amet corrupti eos perferendis dicta eveniet modi expedita laborum porro atque molestias optio, magni voluptatem.</p>
                 <div class="social-icons">
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
                     <a href=""><i class="fa-brands fa-whatsapp"></i></a>               
                 </div>
-            </div>
-            <div class="footer-info">
-                <span class="footer-title">Comprá los neumaticos ideales para tu vehiculo</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia quisquam ut aliquam cum distinctio dolore amet corrupti eos perferendis dicta eveniet modi expedita laborum porro atque molestias optio, magni voluptatem.</p>
             </div>
             <div class="footer-about">
                 <span class="footer-title">¿Quienes Somos?</span>
@@ -147,6 +185,7 @@
             <span>Powered by CUBAT S.A.S.</span>
         </div>
     </footer>
+
     <div id='whatsapp-chat' class='hide'>
         <div class='header-chat'>
             <div class='head-home'>
@@ -176,15 +215,8 @@
         <a class='close-chat' onclick="cerrar_chat();">×</a>
     </div>
     <a class='blantershow-chat' onclick="mostrar_chat();" title='Show Chat'><svg width="20" viewBox="0 0 24 24"><defs/><path fill="#eceff1" d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z"/><path fill="#4caf50" d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z"/><path fill="#fafafa" d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg> 
-    Chateà con nosotros</a>
-    
-    <style>
-    
-    
-    
-    
-    </style>
-    
+    Chateá con nosotros</a>
+        
     <script>
     
     function enviar_mensaje(){
@@ -209,8 +241,5 @@
        }
         
     </script>
-    <footer>
-
-    </footer>
 </body>
 </html>
