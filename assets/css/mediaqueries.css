@@ -12,20 +12,20 @@
 @media (max-width: 768px) {
 
     .header-top {
-        padding: 0 50px;
+        padding: 0 10px;
         justify-content: center;
         font-size: 14px;
     }
 
     header,
     .hero {
-        padding: 0 50px;
+        padding: 0 20px;
     }
     
     .services {
         flex-direction: column;
         width: 100%;
-        padding: 50px;
+        padding: 50px 30px;
     }
 
     .services img,
@@ -60,6 +60,7 @@
 
     .header-top {
         font-size: 12px;
+        padding: 0;
     }
 
     .hero-text {
@@ -83,7 +84,7 @@
 
     .footer {
         flex-direction: column;
-        padding: 50px;
+        padding: 30px;
     }
 
     .footer-bottom {

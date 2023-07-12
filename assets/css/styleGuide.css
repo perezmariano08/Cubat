@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/*? Headings */
+/*? Headings Desktop */
 h1 {
     font-size: 45px;
     line-height: 45px;
@@ -37,6 +37,44 @@ h6 {
 p {
     font-weight: 300;
 }
+
+/* Mobile */
+@media (max-width: 575px) {
+    h1 {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 700;
+    }
+    
+    h2 {
+        font-size: 35px;
+        line-height: 35px;
+        font-weight: 700;
+    }
+    
+    h3 {
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 700;
+    }
+    
+    h4 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    h5 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+    h6 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    
+}   
 
 /*? Botones */
 .btn {
